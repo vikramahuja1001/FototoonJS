@@ -1,0 +1,32 @@
+
+<HTML>
+<HEAD>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.js"></script>
+<link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.1/themes/base/jquery-ui.css"/>
+
+
+<STYLE>
+.bubble {
+    margin: 50px;
+    padding: 50px;
+    position: relative;
+}
+.bubble:after {
+    content: "";
+    position: absolute;
+   top: 100%;
+   left: 20px;
+   border-top: 20px solid blue;
+   border-top-color: inherit; 
+   border-left: 20px solid transparent;
+   border-right: 20px solid transparent; 
+}
+</STYLE>
+</HEAD>
+<BODY>
+<div class="bubble" style="background: red; border-color: red;">test</div>
+
+</BODY>
+<SCRIPT>$(function(){$('.bubble').draggable().resizable();});</SCRIPT>
+</HTML>
